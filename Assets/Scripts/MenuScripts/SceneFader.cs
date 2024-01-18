@@ -5,14 +5,17 @@ public class SceneFader : MonoBehaviour
 {
     [SerializeField] private Animator _animator;
 
-    public void FadeIn()
+    private string _sceneName;
+
+    public void FadeIn(string sceneName)
     {
         _animator.SetTrigger("FadeIn");
+        _sceneName = sceneName;
     }
 
     //Invokes righ after animation is played
-    public void TransferToScene(string sceneName)
+    public void TransferToScene()
     {
-        SceneManager.LoadScene(sceneName);
+        SceneManager.LoadScene(_sceneName);
     }
 }

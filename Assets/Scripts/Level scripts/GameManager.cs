@@ -1,4 +1,6 @@
+using UnityEditor.SearchService;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -25,6 +27,20 @@ public class GameManager : MonoBehaviour
         _bootstrap = new GameBootstrap(_numberOfAnimalsToFeed);
     }
 
+    public void ResetLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    /// <summary>
+    /// This method changes a lose screen message on our exeption message
+    /// </summary>
+    /// <param name="exeption"></param>
+    public void OnExeptionIncome(string exeption)
+    {
+        _uiManager.ChangeLoseScreenText(exeption);
+    }
+
     private void OnEnable()
     {
         _bootstrap.FullAnimalsCounter.OnTaretNumberReached += OnAllAnimalsGotRightFood;
@@ -43,11 +59,5 @@ public class GameManager : MonoBehaviour
     private void OnAllAnimalsGotRightFood()
     {
         _uiManager.ShowWinScreen();
-    }
-
-    //Will transfer to a next scene after short animation
-    private void MoveToNextLevel()
-    {
-        _sceneFader.FadeIn();
     }
 }
