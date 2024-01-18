@@ -19,15 +19,13 @@ public class AudioManager : MonoBehaviour
     private MusicClipFactory _musicClipFactory;
 
     [Header("AudioClip")]
-    [SerializeField] private AudioClip _sadMusic;
     [SerializeField] private AudioClip _happyMusic;
-    [SerializeField] private AudioClip _shootSound;
-    [SerializeField] private AudioClip _clickSound;
+
     private void Initialize()
     {
         _volumeController = new VolumeController(_audioMixer, _musicSlider, _SFXSlider);
-        _SFXClipFactory = new SFXClipFactory(_shootSound,_clickSound);
-        _musicClipFactory = new MusicClipFactory(_sadMusic,_happyMusic);
+        //_SFXClipFactory = new SFXClipFactory(_shootSound,_clickSound);
+        //_musicClipFactory = new MusicClipFactory(_sadMusic,_happyMusic);
     }
     private void Awake()
     {

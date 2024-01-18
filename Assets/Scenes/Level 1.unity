@@ -447,11 +447,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2926729255317412185, guid: 031989e7cb307064e8025caf927c3ac5, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6437739973550748299, guid: 031989e7cb307064e8025caf927c3ac5, type: 3}
       propertyPath: m_Alpha
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6602103698654447818, guid: 031989e7cb307064e8025caf927c3ac5, type: 3}
       propertyPath: m_text
@@ -992,6 +992,10 @@ PrefabInstance:
     - target: {fileID: 2926729255317412185, guid: 031989e7cb307064e8025caf927c3ac5, type: 3}
       propertyPath: m_Name
       value: WinScreen
+      objectReference: {fileID: 0}
+    - target: {fileID: 2926729255317412185, guid: 031989e7cb307064e8025caf927c3ac5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
