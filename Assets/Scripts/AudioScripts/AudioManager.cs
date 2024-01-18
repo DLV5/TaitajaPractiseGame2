@@ -40,11 +40,13 @@ public class AudioManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
-    public void PlayMusic(MusicType musicType)
-    {
-        _musicAudioSource.clip = _musicClipFactory.GetMusicClip(musicType);
-        _musicAudioSource.Play();
-    }
+
+    //public void PlayMusic(MusicType musicType)
+    //{
+    //    _musicAudioSource.clip = _musicClipFactory.GetMusicClip(musicType);
+    //    _musicAudioSource.Play();
+    //}
+
     public void PlaySFX(SFXType soundType)
     {
         _SFXAudioSource.clip = _SFXClipFactory.GetSFXClip(soundType);

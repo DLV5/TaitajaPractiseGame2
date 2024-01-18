@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 /// <summary>
 /// Used for drawing Line using LineRenderer 
