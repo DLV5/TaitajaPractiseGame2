@@ -67,7 +67,7 @@ public class AnimalController : MonoBehaviour
         //Animal rotates
         Vector2 direction = nextPosition - (Vector2)transform.position;
         float angle = Mathf.Atan2(direction.normalized.y, direction.normalized.x);
-        transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.Euler(0f, 0f, angle * Mathf.Rad2Deg + 90f), _speed);
+        transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.Euler(0f, 0f, angle * Mathf.Rad2Deg), _speed);
 
         if(distanceUntilDestination <= 0.07f)
         {

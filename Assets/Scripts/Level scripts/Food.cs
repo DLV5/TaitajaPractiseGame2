@@ -2,10 +2,10 @@ using UnityEngine;
 
 public enum FoodType
 {
-    Lion,
-    Gorila,
-    Elephant,
-    Python
+    Gorilla,
+    Jaguar,
+    Python,
+    Elephant
 }
 
 public class Food : MonoBehaviour

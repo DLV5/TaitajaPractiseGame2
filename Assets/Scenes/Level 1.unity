@@ -467,6 +467,10 @@ PrefabInstance:
       value: 26
       objectReference: {fileID: 0}
     - target: {fileID: 6602103698654447818, guid: 031989e7cb307064e8025caf927c3ac5, type: 3}
+      propertyPath: m_wordSpacing
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602103698654447818, guid: 031989e7cb307064e8025caf927c3ac5, type: 3}
       propertyPath: m_fontSizeBase
       value: 26
       objectReference: {fileID: 0}
@@ -729,7 +733,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7520119839391082304, guid: 9ca763bde8d87e54696e76c6d8f7310c, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -771,9 +775,37 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -4507728804857594625, guid: 7b35372aab271124fbe350c0133fb0c9, type: 3}
+      propertyPath: m_Size.x
+      value: 13.17
+      objectReference: {fileID: 0}
+    - target: {fileID: -4507728804857594625, guid: 7b35372aab271124fbe350c0133fb0c9, type: 3}
+      propertyPath: m_Size.y
+      value: 13.22
+      objectReference: {fileID: 0}
+    - target: {fileID: -4507728804857594625, guid: 7b35372aab271124fbe350c0133fb0c9, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 12.8
+      objectReference: {fileID: 0}
+    - target: {fileID: -4507728804857594625, guid: 7b35372aab271124fbe350c0133fb0c9, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 12.77
+      objectReference: {fileID: 0}
     - target: {fileID: 187837781429259905, guid: 7b35372aab271124fbe350c0133fb0c9, type: 3}
       propertyPath: m_Name
-      value: Monkey
+      value: Gorilla
+      objectReference: {fileID: 0}
+    - target: {fileID: 865267530546531916, guid: 7b35372aab271124fbe350c0133fb0c9, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.16
+      objectReference: {fileID: 0}
+    - target: {fileID: 865267530546531916, guid: 7b35372aab271124fbe350c0133fb0c9, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.117136
+      objectReference: {fileID: 0}
+    - target: {fileID: 865267530546531916, guid: 7b35372aab271124fbe350c0133fb0c9, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.16
       objectReference: {fileID: 0}
     - target: {fileID: 865267530546531916, guid: 7b35372aab271124fbe350c0133fb0c9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -815,17 +847,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 865267530546531916, guid: 7b35372aab271124fbe350c0133fb0c9, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5300474983911462748, guid: 7b35372aab271124fbe350c0133fb0c9, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 717352651c702b84da207cd7e63a9add, type: 3}
     - target: {fileID: 5300474983911462748, guid: 7b35372aab271124fbe350c0133fb0c9, type: 3}
       propertyPath: m_Color.b
-      value: 0.5218049
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5300474983911462748, guid: 7b35372aab271124fbe350c0133fb0c9, type: 3}
       propertyPath: m_Color.g
-      value: 0.5218049
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5300474983911462748, guid: 7b35372aab271124fbe350c0133fb0c9, type: 3}
       propertyPath: m_Color.r
-      value: 0.7735849
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8449526000382796991, guid: 7b35372aab271124fbe350c0133fb0c9, type: 3}
       propertyPath: _prefferedFood
@@ -901,7 +941,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Try to connect animal and his food!
+  m_text: Try to connect animal and his food! You can draw line from every animal
+    only once!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 16606a8a4ee9f8644a8c54edec9f1ad6, type: 2}
   m_sharedMaterial: {fileID: 6487227641992892966, guid: 16606a8a4ee9f8644a8c54edec9f1ad6, type: 2}
@@ -928,8 +969,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 24
+  m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -939,7 +980,7 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
-  m_wordSpacing: 0
+  m_wordSpacing: 33
   m_lineSpacing: 0
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
@@ -1396,6 +1437,14 @@ PrefabInstance:
     - target: {fileID: 2926729255317412185, guid: 031989e7cb307064e8025caf927c3ac5, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3585448614211139892, guid: 031989e7cb307064e8025caf927c3ac5, type: 3}
+      propertyPath: m_Color.a
+      value: 0.7254902
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602103698654447818, guid: 031989e7cb307064e8025caf927c3ac5, type: 3}
+      propertyPath: m_wordSpacing
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8801650628222114208, guid: 031989e7cb307064e8025caf927c3ac5, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
